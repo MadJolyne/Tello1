@@ -1,0 +1,34 @@
+from djitellopy import Tello
+# find import time later, and sleep
+tello = Tello()
+tello.connect()
+tello.takeoff()
+# 32 in up at take off, (81cm) (6ft=182.88cm)
+tello.move_up(102)
+# starts facing east
+tello.rotate_clockwise(90)
+# east 5ft
+tello.move_forward(152)
+# face north
+tello.rotate_counter_clockwise(90)
+# 6ft north
+tello.move_forward(183)
+# face east
+tello.rotate_clockwise(90)
+# 3ft down
+tello.move_down(92)
+# 3ft east
+tello.move_forward(91)
+# face south
+tello.rotate_clockwise(90)
+# 4ft up
+tello.move_up(122)
+# 3ft south
+tello.move_forward(122)
+# face east
+tello.rotate_counter_clockwise(90)
+# 6ft east
+tello.move_forward(183)
+# land, senses height
+
+tello.land()
