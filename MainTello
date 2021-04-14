@@ -24,7 +24,7 @@ tello.rotate_clockwise(90)
 # 1ft up
 tello.move_up(31)
 # 3ft south
-tello.move_forward(122)
+tello.move_forward(91)
 # face east
 tello.rotate_counter_clockwise(90)
 # 6ft east
