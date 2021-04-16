@@ -5,8 +5,7 @@ tello.connect()
 tello.takeoff()
 # 32 in up at take off, (81cm) (6ft=182.88cm)
 tello.move_up(102)
-# starts facing north
-tello.rotate_clockwise(90)
+# starts facing east
 # east 5ft
 tello.move_forward(152)
 # face north
