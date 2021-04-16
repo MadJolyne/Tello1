@@ -29,5 +29,4 @@ tello.rotate_counter_clockwise(90)
 # 6ft east
 tello.move_forward(183)
 # land, senses height
-
 tello.land()
