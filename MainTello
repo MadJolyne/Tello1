@@ -5,14 +5,12 @@ tello = Tello()
 tello.connect()
 tello.takeoff()
 
-tello.move_up(102)
-
+tello.send_rc_control(0, 0, 50, 0)
+sleep(3.92)
 tello.send_rc_control(0, 0, 0, -50)
-sleep(0.33)
-
+sleep(0.46)
 tello.send_rc_control(0, 50, 0, 0)
-sleep(5)
-
+sleep(3.89)
 tello.send_rc_control(0, 0, 0, 0)
 
 tello.land()
